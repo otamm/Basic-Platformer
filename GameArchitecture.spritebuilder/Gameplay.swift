@@ -39,7 +39,7 @@ class Gameplay:CCNode, CCPhysicsCollisionDelegate {
     // executed as soon as Gameplay is loaded
     func didLoadFromCCB() {
         //self.character = CCBReader.load("Character") as! Character;
-        var level = CCBReader.load("Level\(self.currentLevel)");
+        var level = CCBReader.load("Level\(self.currentLevel)", owner: self) as! Level;
         self.levelNode.addChild(level);
         self.gamePhysicsNode.collisionDelegate = self;
     }
@@ -60,15 +60,16 @@ class Gameplay:CCNode, CCPhysicsCollisionDelegate {
         self.userInteractionEnabled = true;
     }
     
-    // executed at every new frame
+    // executed at every new frame (for example, renders moving sprite)
     override func update(delta: CCTime) {
         if CGRectGetMaxX(self.character.boundingBox()) < CGRectGetMinY(self.gamePhysicsNode.boundingBox()) {
             self.gameOver();
         }
     }
     
+    // executed at constant rate (for example, keeps track of a moving sprite position even when the frame rate drops)
     override func fixedUpdate(delta: CCTime) {
-        self.character.physicsBody.velocity = CGPoint(x: 40, y: character.physicsBody.velocity.y)
+        self.character.physicsBody.velocity = CGPoint(x: 40, y: self.character.physicsBody.velocity.y);
     }
     
     /* iOS methods */
