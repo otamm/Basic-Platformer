@@ -57,97 +57,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>NewAssets/p2_walk01.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.033333335071802139</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk02.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.066666670143604279</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk03.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.10000000149011612</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk04.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.13333334028720856</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk05.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.1666666716337204</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk06.png</string>
+								<string>NewAssets/flagBlue.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -165,79 +75,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>NewAssets/p2_walk07.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.23333333432674408</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk08.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.26666668057441711</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk09.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.30000001192092896</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk10.png</string>
-								<string>Use regular file</string>
-							</array>
-						</dict>
-						<dict>
-							<key>easing</key>
-							<dict>
-								<key>type</key>
-								<integer>0</integer>
-							</dict>
-							<key>name</key>
-							<string>spriteFrame</string>
-							<key>time</key>
-							<real>0.3333333432674408</real>
-							<key>type</key>
-							<integer>7</integer>
-							<key>value</key>
-							<array>
-								<string>NewAssets/p2_walk11.png</string>
+								<string>NewAssets/flagBlue2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -254,7 +92,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Character</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -280,7 +118,7 @@
 			<key>density</key>
 			<real>1</real>
 			<key>dynamic</key>
-			<true/>
+			<false/>
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
@@ -293,11 +131,11 @@
 				</array>
 				<array>
 					<real>0.0</real>
-					<real>47</real>
+					<real>35</real>
 				</array>
 				<array>
 					<real>35</real>
-					<real>47</real>
+					<real>35</real>
 				</array>
 				<array>
 					<real>35</real>
@@ -313,11 +151,11 @@
 					</array>
 					<array>
 						<real>35</real>
-						<real>47</real>
+						<real>35</real>
 					</array>
 					<array>
 						<real>0.0</real>
-						<real>47</real>
+						<real>35</real>
 					</array>
 					<array>
 						<real>0.0</real>
@@ -377,7 +215,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>NewAssets/p2_walk01.png</string>
+					<string>NewAssets/flagBlue.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -387,7 +225,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>NewAssets/p2_walk11.png</string>
+					<string>NewAssets/flagBlue2.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -476,7 +314,7 @@
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>0.3333333432674408</real>
+			<real>0.40000000596046448</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
