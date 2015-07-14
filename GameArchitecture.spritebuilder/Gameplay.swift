@@ -31,12 +31,17 @@ class Gameplay:CCNode, CCPhysicsCollisionDelegate {
     // keeps track of current level; 1 by default.
     var currentLevel:Int = 1;
     
+    // keeps track of number of playable levels.
+    var maxLevel:Int = 3;
     
     /* cocos2d methods */
     
     // executed as soon as Gameplay is loaded
     func didLoadFromCCB() {
-        self.gamePhysicsNode.collisionDelegate = self
+        //self.character = CCBReader.load("Character") as! Character;
+        var level = CCBReader.load("Level\(self.currentLevel)");
+        self.levelNode.addChild(level);
+        self.gamePhysicsNode.collisionDelegate = self;
     }
     
     // executed just after self.didLoadFromCCB()
@@ -90,7 +95,13 @@ class Gameplay:CCNode, CCPhysicsCollisionDelegate {
         let popup = CCBReader.load("WinPopup") as! WinPopup;
         popup.positionType = CCPositionType(xUnit: .Normalized, yUnit: .Normalized, corner: .BottomLeft)
         popup.position = CGPoint(x: 0.5, y: 0.5)
-        popup.nextLevelName = "Level3"
+        if (self.currentLevel + 1 <= self.maxLevel) {
+            popup.nextLevelName = "Level\(self.currentLevel + 1)";
+            self.currentLevel += 1;
+        } else {
+            popup.nextLevelName = "MainScene";
+        }
+        
         parent.addChild(popup)
         
         return true

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA447E851B550E7300700888 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA447E841B550E7300700888 /* Character.swift */; };
 		FC76228D19919EE00001BCF4 /* asm_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = FC76226E19919EE00001BCF4 /* asm_arm.h */; };
 		FC76228E19919EE00001BCF4 /* backends.h in Headers */ = {isa = PBXBuildFile; fileRef = FC76226F19919EE00001BCF4 /* backends.h */; };
 		FC76228F19919EE00001BCF4 /* block.h in Headers */ = {isa = PBXBuildFile; fileRef = FC76227019919EE00001BCF4 /* block.h */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA447E831B550E7200700888 /* tremor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tremor-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA447E841B550E7300700888 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = ../../../../../../../../../Character.swift; sourceTree = "<group>"; };
 		FC76226219919ECD0001BCF4 /* libtremor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtremor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC76226619919ECD0001BCF4 /* tremor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tremor-Info.plist"; sourceTree = "<group>"; };
 		FC76226819919ECD0001BCF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -109,9 +112,11 @@
 		FC76225919919ECD0001BCF4 = {
 			isa = PBXGroup;
 			children = (
+				AA447E841B550E7300700888 /* Character.swift */,
 				FC7622AC19919F5A0001BCF4 /* ogg.xcodeproj */,
 				FC76226419919ECD0001BCF4 /* tremor */,
 				FC76226319919ECD0001BCF4 /* Products */,
+				AA447E831B550E7200700888 /* tremor-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +287,7 @@
 				FC7622A819919EE00001BCF4 /* sharedbook.c in Sources */,
 				FC7622A619919EE00001BCF4 /* registry.c in Sources */,
 				FC76229E19919EE00001BCF4 /* codebook.c in Sources */,
+				AA447E851B550E7300700888 /* Character.swift in Sources */,
 				FC76229F19919EE00001BCF4 /* floor0.c in Sources */,
 				FC7622A719919EE00001BCF4 /* res012.c in Sources */,
 				FC7622A419919EE00001BCF4 /* mapping0.c in Sources */,
@@ -384,6 +390,7 @@
 		FC76226C19919ECD0001BCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -393,15 +400,19 @@
 					"\"$(SRCROOT)/../../../ogg/include\"",
 				);
 				INFOPLIST_FILE = "tremor/tremor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = apportablesdk1.0;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "tremor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FC76226D19919ECD0001BCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
@@ -411,9 +422,11 @@
 					"\"$(SRCROOT)/../../../ogg/include\"",
 				);
 				INFOPLIST_FILE = "tremor/tremor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = apportablesdk1.0;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "tremor-Bridging-Header.h";
 			};
 			name = Release;
 		};
